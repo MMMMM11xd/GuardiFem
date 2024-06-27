@@ -1,0 +1,291 @@
+<header>
+    <img src="images/logo.png" alt="Logo de Guardifem" id="logo">
+    <h1>Guardifem</h1>
+    <p>Apoyo y orientación para mujeres víctimas de acoso cibernético en Lima, Perú</p>
+</header>
+/* styles.css */
+
+/* Otros estilos ya existentes... */
+
+/* Estilos para el logo */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+header img#logo {
+    width: 80px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 15px; /* Espacio entre el logo y el texto */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1em;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardifem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección de Registro -->
+    <section id="registro">
+        <div id="registro-container">
+            <h2>Registrarse en Guardifem</h2>
+            <form id="form-registro">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección Principal -->
+    <main style="display:none;">
+        <!-- Contenido Principal -->
+        <section id="contenido">
+            <header>
+                <img src="images/logo.png" alt="Logo de Guardifem" id="logo">
+                <h1>Guardifem</h1>
+                <p>Apoyo y orientación para mujeres víctimas de acoso cibernético en Lima, Perú</p>
+            </header>
+
+            <!-- Sección del Chat -->
+            <section id="chat">
+                <h2>Chat de Apoyo Inmediato</h2>
+                <div id="chat-container">
+                    <div id="chat-box">
+                        <div class="message bot">Hola, soy tu asistente de apoyo. ¿Cómo puedo ayudarte hoy?</div>
+                    </div>
+                    <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                    <button id="send-button">Enviar</button>
+                </div>
+            </section>
+
+            <!-- Sección de Información y Redes de Apoyo -->
+            <section id="info">
+                <h2>Redes de Apoyo</h2>
+                <p>Si necesitas ayuda inmediata, por favor contacta a una de las siguientes organizaciones:</p>
+                <ul>
+                    <li>ONG A: <a href="tel:+51987654321">+51 987 654 321</a></li>
+                    <li>ONG B: <a href="tel:+51912345678">+51 912 345 678</a></li>
+                    <li>Servicio de Apoyo Psicológico: <a href="tel:+51123456789">+51 1 234 567 89</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <!-- Barra Lateral con Herramientas -->
+        <aside id="sidebar">
+            <h3>Herramientas</h3>
+            <ul>
+                <li><button class="tool-button" data-tool="boton-panico">Botón de Pánico</button></li>
+                <li><button class="tool-button" data-tool="orientacion-legal">Orientación Legal y Psicológica</button></li>
+                <li><button class="tool-button" data-tool="eventos-virtuales">Eventos Virtuales en Vivo</button></li>
+                <li><button class="tool-button" data-tool="intervencion-automatica">Intervención Automática</button></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
+css
+Copiar código
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 105, 180, 0.7);
+    position: absolute;
+    width: 100%;
+}
+
+#registro-container {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#registro-container h2 {
+    margin-top: 0;
+}
+
+#form-registro {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-registro label {
+    margin: 0.5em 0 0.2em;
+}
+
+#form-registro input {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#form-registro button {
+    padding: 0.7em;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    padding: 2em;
+    background-color: #ffe4e1;
+    width: 100%;
+    justify-content: center;
+}
+
+#contenido {
+    flex: 1;
+    max-width: 800px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+header img#logo {
+    width: 80px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 15px; /* Espacio entre el logo y el texto */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1em;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-box {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 8px;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 1em;
+}
+
+.message {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 8px;
+}
+
+.message.bot {
+    background-color: #ffb6c1;
+}
+
+.message.user {
+    background-color: #ffd700;
+    text-align: right;
+}
+
+#user-input {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+#send-button {
+    padding: 0.7em;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#info ul li {
+    margin: 0.5em 0;
+}
+
+#sidebar {
+    width: 200px;
+    margin-left: 2em;
+}
+
+.tool-button {
+    display: block;
+    width: 100%;
+    padding: 0.7em;
+    margin: 0.5em 0;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tool-button:hover {
+    background-color: #ff1493;
+}
